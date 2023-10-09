@@ -1,0 +1,28 @@
+{
+  "student": [
+    {
+      "fname": "Shakti",
+      "lname": "BK",
+      "rollno": "",
+      "address": "Lalitpure",
+      "phoneno": "111111",
+      "id": 1
+    },
+    {
+      "fname": "raj",
+      "lname": "bk",
+      "rollno": "10",
+      "address": "ktm",
+      "phoneno": "222222",
+      "id": 2
+    },
+    {
+      "fname": "kewang",
+      "lname": "lama",
+      "rollno": "9",
+      "address": "nakhipot",
+      "phoneno": "555555",
+      "id": 3
+    }
+  ]
+}

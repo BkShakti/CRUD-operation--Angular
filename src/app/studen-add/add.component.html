@@ -1,0 +1,87 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Student Detail Adding</h1>
+    </div>
+  </div>
+  <div class="row mb-0">
+    <div class="col-7">
+      <div *ngIf="isSuccessShowing" class="p-0 alert-success">
+        Student added <span class="text-success">Successfully!!</span>
+        <button
+          type="button"
+          class="btn btn-success p-0 mx-2"
+          (click)="removedMsg()"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+  <form class="mt-0" (ngSubmit)="saveData()">
+    <div class="row mt-5">
+      <div class="col-5">
+        <label for=""> First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="first name"
+          name="fname"
+          [(ngModel)]="addStudent.fname"
+          autocomplete="off"
+        />
+      </div>
+      <div class="col-5">
+        <label for=""> Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Last name"
+          name="lname"
+          [(ngModel)]="addStudent.lname"
+          autocomplete="off"
+        />
+      </div>
+      <div class="col-5">
+        <label for=""> Roll no</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="roll no"
+          name="rollno"
+          [(ngModel)]="addStudent.rollno"
+          autocomplete="off"
+        />
+      </div>
+      <div class="col-5">
+        <label for=""> Phone Number</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder=" phone number"
+          name="phoneno"
+          [(ngModel)]="addStudent.phoneno"
+          autocomplete="off"
+        />
+      </div>
+      <div class="row mt-3">
+        <div class="col-10">
+          <textarea
+            type="text"
+            class="col-5"
+            placeholder="address"
+            name="address"
+            [(ngModel)]="addStudent.address"
+            autocomplete="off"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-11">
+          <button class="btn btn-success m-2">Add</button>
+          <button class="btn btn-danger">Reste</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

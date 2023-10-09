@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <div class="row text-center">
+    <div class="col-12">
+      <h2>Student List</h2>
+    </div>
+  </div>
+  <div class="row mt-1">
+    <div class="col-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Roll Noumber</th>
+            <th scope="col">Phone No.</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of studentList; let index = index">
+            <td>{{ index + 1 }}</td>
+            <td>{{ studentList[index].fname }}</td>
+            <td>{{ studentList[index].lname }}</td>
+            <td>{{ studentList[index].address }}</td>
+            <td>{{ studentList[index].rollno }}</td>
+            <td>{{ studentList[index].phoneno }}</td>
+            <td>
+              <i
+                class="fa fa-edit"
+                routerLink="/update/{{ studentList[index].id }}"
+                (click)="updateStudent()"
+              >
+              </i>
+              <i
+                class="fa fa-trash"
+                (click)="delStudent(studentList[index].id)"
+              ></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

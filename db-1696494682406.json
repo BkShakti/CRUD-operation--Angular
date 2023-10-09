@@ -1,0 +1,20 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "fname": "shakti",
+      "lname": "bk",
+      "rollno": "14",
+      "address": "Thaiba",
+      "phoneno": 1111111
+    },
+    {
+      "id": 2,
+      "fname": "raj",
+      "lname": "thakaur",
+      "rollno": "15",
+      "address": "lalitpur",
+      "phoneno": 1111111
+    }
+  ]
+}

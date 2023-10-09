@@ -1,0 +1,26 @@
+.container-one{
+ width: 100%;
+ margin-top: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+.list-list{
+ display: flex;
+ position: relative;
+ right: -447px;
+}
+
+.list-list button{
+ display: flex;
+ align-items: center;
+ justify-self: flex-end;
+}
+.first{
+ margin-right:10px ;
+}
+
+.btn{
+ background-color: transparent;
+ padding: 2px 12px;
+}
